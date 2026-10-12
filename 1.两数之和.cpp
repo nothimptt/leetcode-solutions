@@ -9,7 +9,7 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> result;
-        unordered_map<int, int> num_index; // 哈希
+        unordered_map<int, int> num_index; // 存储数字及其对应的索引 哈希
         for (int i = 0; i < nums.size(); ++i) {
             if (num_index.find(target - nums[i]) != num_index.end()) {
                 result.push_back(num_index[target-nums[i]]);
